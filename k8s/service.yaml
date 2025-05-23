@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: passenger-counting-system
+spec:
+  selector:
+    app: passenger-counting-system
+  ports:
+  - port: 80
+    targetPort: 3000
+  type: ClusterIP
